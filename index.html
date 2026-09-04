@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3SECONDS — Creative Strategy, Campaigns & Content Built to Stop the Scroll</title>
+  <meta name="description" content="3seconds is an editorial creative content and media agency. We turn 3 seconds of attention into unstoppable brand momentum.">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="3SECONDS — Make The First 3 Seconds Count">
+  <meta property="og:description" content="Creative strategy, social campaigns, and rapid studio production built to stop the scroll.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/hero_showreel_poster.jpg">
+
+  <!-- Design System Stylesheets -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <!-- PAGE TRANSITION FRAME (03-sections/global/page-transition.md) -->
+  <div class="page-transition-frame" id="page-transition" aria-hidden="true"></div>
+
+  <!-- =========================================================================
+       GLOBAL HEADER (03-sections/global/header.md)
+       ========================================================================= -->
+  <header class="site-header" id="site-header" role="banner">
+    <div class="container header-inner">
+      <!-- Brand Wordmark -->
+      <a href="index.html" class="header-brand" aria-label="3seconds agency home">
+        <span class="brand-wordmark">3SECONDS</span>
+        <span class="brand-badge">AGENCY</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="header-nav" aria-label="Primary navigation">
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#careers" class="nav-link">Careers</a>
+        <a href="#contact" class="nav-link" data-action="open-brief">Contact</a>
+      </nav>
+
+      <!-- Action Group -->
+      <div class="header-actions">
+        <!-- Live Recording Timecode Motif -->
+        <div class="timecode" aria-label="Master Timecode">
+          <span class="rec-dot"></span>
+          <span data-live-timecode>00:00:03:00</span>
+        </div>
+
+        <!-- Primary CTA Graphic Button -->
+        <a href="#brief" class="btn btn-signal" data-action="open-brief">
+          Start a brief
+          <span class="btn-arrow">↗</span>
+        </a>
+
+        <!-- Mobile / Secondary Menu Trigger -->
+        <button class="menu-trigger" data-action="open-menu" aria-label="Open menu navigation">
+          <span class="hamburger-bars">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </span>
+          <span>Menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       FULLSCREEN MENU OVERLAY (03-sections/global/menu-overlay.md)
+       ========================================================================= -->
+  <div class="menu-overlay" id="menu-overlay" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="menu-overlay-header">
+      <div class="brand-wordmark">3SECONDS</div>
+      <button class="menu-close-btn" data-action="close-menu" aria-label="Close menu navigation">
+        <span>CLOSE [ESC]</span>
+        <span>✕</span>
+      </button>
+    </div>
+
+    <nav class="menu-overlay-links" aria-label="Mobile overlay links">
+      <a href="#work" class="menu-overlay-link" data-action="close-menu">
+        <span class="menu-index">01</span>
+        <span>Work</span>
+      </a>
+      <a href="#services" class="menu-overlay-link" data-action="close-menu">
+        <span class="menu-index">02</span>
+        <span>Services</span>
+      </a>
+      <a href="#about" class="menu-overlay-link" data-action="close-menu">
+        <span class="menu-index">03</span>
+        <span>About</span>
+      </a>
+      <a href="#careers" class="menu-overlay-link" data-action="close-menu">
+        <span class="menu-index">04</span>
+        <span>Careers</span>
+      </a>
+      <a href="#brief" class="menu-overlay-link" data-action="open-brief">
+        <span class="menu-index">05</span>
+        <span>Start a brief</span>
+      </a>
+    </nav>
+
+    <div class="menu-overlay-footer">
+      <div class="mono-label">TIME IS ATTENTION. ATTENTION IS VALUE.</div>
+      <div class="timecode">
+        <span class="rec-dot"></span>
+        <span data-live-timecode>00:00:03:00</span>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- =======================================================================
+         3-SECOND HERO SECTION (03-sections/home/hero-3-seconds.md)
+         ======================================================================= -->
+    <section class="hero-section container" id="hero" aria-label="Hero section">
+      <!-- Non-blocking 3-second countdown ticker motif -->
+      <div class="hero-countdown-ticker" aria-label="3 second attention counter">
+        <span class="countdown-tag">COUNTDOWN</span>
+        <span class="countdown-digits" id="countdown-digits">03</span>
+        <div class="countdown-progress-bar">
+          <div class="countdown-progress-fill" id="countdown-fill"></div>
+        </div>
+        <span class="countdown-tag">WINDOW</span>
+      </div>
+
+      <div class="hero-grid">
+        <!-- Text Column -->
+        <div class="hero-text-col">
+          <div class="hero-badge-row">
+            <span class="mono-label">[ CREATIVE MEDIA AGENCY ]</span>
+            <div class="timecode">
+              <span class="rec-dot"></span>
+              <span>ATTENTION PROTOCOL</span>
+            </div>
+          </div>
+
+          <h1 class="hero-headline hero-title">
+            Make the first<br>
+            <span class="highlight-signal">3 seconds</span><br>
+            count.
+          </h1>
+
+          <p class="hero-subtitle">
+            Creative strategy, campaigns and production built to stop the scroll. We turn 3 seconds of fleeting consumer attention into unstoppable brand momentum.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#brief" class="btn btn-signal" data-action="open-brief">
+              Start a brief
+              <span class="btn-arrow">↗</span>
+            </a>
+            <a href="#work" class="btn btn-outline">
+              See the work
+              <span class="btn-arrow">↓</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Showreel Visual Column -->
+        <div class="hero-media-col">
+          <div class="hero-reel-frame crop-bracket">
+            <img 
+              src="assets/hero_showreel_poster.jpg" 
+              alt="3seconds Agency Showreel Cinematics" 
+              class="hero-reel-img" 
+              loading="eager"
+            >
+            <div class="hero-reel-overlay">
+              <div class="reel-status-bar">
+                <span class="reel-tag">SHOWREEL 2026</span>
+                <button class="sound-toggle-btn" id="sound-toggle" aria-label="Toggle reel audio preview">
+                  <span class="rec-dot" style="background: var(--mid)"></span>
+                  AUDIO OFF
+                </button>
+              </div>
+
+              <div class="reel-meta">
+                <span class="mono-label" style="color: var(--paper)">FRAME // 00:00:03</span>
+                <span class="reel-tag" style="border-color: var(--signal)">60 FPS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Orientation & Scroll Bar -->
+      <div class="hero-bottom-bar">
+        <div class="mono-label">
+          METHOD: 01 HOOK &rarr; 02 HOLD &rarr; 03 HIT
+        </div>
+        <div class="hero-scroll-hint">
+          <span>SCROLL TO EXPLORE</span>
+          <div class="hero-scroll-icon" aria-hidden="true"></div>
+        </div>
+        <div class="mono-label">
+          GLOBAL REACH // LONDON &bull; NYC &bull; TOKYO
+        </div>
+      </div>
+    </section>
+
+    <!-- Placeholder anchor for upcoming Milestone sections -->
+    <div id="work" style="padding: 40px 0; text-align: center; border-top: 1px solid var(--border-subtle); display: none;"></div>
+    <div id="services" style="display: none;"></div>
+    <div id="about" style="display: none;"></div>
+    <div id="careers" style="display: none;"></div>
+  </main>
+
+  <!-- =========================================================================
+       FLOATING CONTACT TRIGGER (03-sections/global/floating-contact.md)
+       ========================================================================= -->
+  <div class="floating-contact" id="floating-contact">
+    <button class="floating-contact-btn" data-action="open-brief">
+      <span>START A BRIEF</span>
+      <span>↗</span>
+    </button>
+  </div>
+
+  <!-- =========================================================================
+       GLOBAL FOOTER (03-sections/global/footer.md)
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-statement">
+        Make the next 3 <span class="signal">count</span>.
+      </div>
+
+      <div class="footer-grid">
+        <!-- Column 1: Brand & Contact -->
+        <div class="footer-contact-info">
+          <div class="footer-col-title">DIRECT INQUIRIES</div>
+          <a href="mailto:hello@3seconds.agency" class="footer-email-link">hello@3seconds.agency</a>
+          <p>London — 14 Clerkenwell Close, EC1R 0AA</p>
+          <p>New York — 88 Franklin Street, Tribeca, NY 10013</p>
+        </div>
+
+        <!-- Column 2: Navigation -->
+        <div>
+          <div class="footer-col-title">INDEX</div>
+          <ul class="footer-links">
+            <li><a href="#work" class="footer-link">Selected Work</a></li>
+            <li><a href="#services" class="footer-link">Services & Matrix</a></li>
+            <li><a href="#about" class="footer-link">Working Philosophy</a></li>
+            <li><a href="#careers" class="footer-link">Careers & Open Roles</a></li>
+            <li><a href="#brief" class="footer-link" data-action="open-brief">Start a Brief</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Social & Culture -->
+        <div>
+          <div class="footer-col-title">PLATFORMS</div>
+          <ul class="footer-links">
+            <li><a href="https://instagram.com" target="_blank" rel="noopener" class="footer-link">Instagram ↗</a></li>
+            <li><a href="https://tiktok.com" target="_blank" rel="noopener" class="footer-link">TikTok ↗</a></li>
+            <li><a href="https://youtube.com" target="_blank" rel="noopener" class="footer-link">YouTube ↗</a></li>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener" class="footer-link">LinkedIn ↗</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Newsletter / Brief Shortcut -->
+        <div>
+          <div class="footer-col-title">LAUNCH A PROJECT</div>
+          <p style="margin-bottom: 16px; color: var(--mid);">Ready to stop the scroll and engineer category-defining creative?</p>
+          <button class="btn btn-signal" data-action="open-brief" style="width: 100%;">
+            Start a brief ↗
+          </button>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div class="footer-clock" id="studio-clock">
+          LON/NYC 00:00:00 UTC
+        </div>
+        <div class="footer-copyright">
+          &copy; 2026 3SECONDS MEDIA GROUP LTD. ALL RIGHTS RESERVED.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       PROJECT BRIEF DRAWER MODAL (03-sections/contact/brief-form.md)
+       ========================================================================= -->
+  <div class="brief-drawer-backdrop" id="brief-drawer-backdrop" aria-hidden="true">
+    <aside class="brief-drawer" role="dialog" aria-modal="true" aria-labelledby="brief-drawer-title">
+      <div class="brief-drawer-header">
+        <div>
+          <div class="mono-label" style="margin-bottom: 4px;">PROJECT INITIATION</div>
+          <h2 class="brief-drawer-title" id="brief-drawer-title">Start a brief</h2>
+          <p style="color: var(--mid); font-size: 14px;">Tell us what you are building. We will respond within 24 hours.</p>
+        </div>
+        <button class="brief-close-btn" data-action="close-brief" aria-label="Close project brief form">
+          CLOSE [ESC] ✕
+        </button>
+      </div>
+
+      <form class="brief-form" id="brief-form">
+        <!-- Field 1: Name -->
+        <div class="form-group">
+          <label class="form-label" for="brief-name">01. Your Name *</label>
+          <input type="text" id="brief-name" class="form-input" placeholder="e.g. Alex Rivera" required>
+        </div>
+
+        <!-- Field 2: Email -->
+        <div class="form-group">
+          <label class="form-label" for="brief-email">02. Work Email *</label>
+          <input type="email" id="brief-email" class="form-input" placeholder="alex@company.com" required>
+        </div>
+
+        <!-- Field 3: Company -->
+        <div class="form-group">
+          <label class="form-label" for="brief-company">03. Brand / Organization *</label>
+          <input type="text" id="brief-company" class="form-input" placeholder="e.g. Acme Corp" required>
+        </div>
+
+        <!-- Field 4: Needs (Multi-Select) -->
+        <div class="form-group">
+          <label class="form-label">04. What do you need? (Select all that apply)</label>
+          <div class="chip-grid">
+            <button type="button" class="chip-btn" aria-pressed="false">Creative Strategy</button>
+            <button type="button" class="chip-btn" aria-pressed="false">Social Campaign</button>
+            <button type="button" class="chip-btn" aria-pressed="false">Content Production</button>
+            <button type="button" class="chip-btn" aria-pressed="false">Film & Motion</button>
+            <button type="button" class="chip-btn" aria-pressed="false">Creator & Influencer</button>
+            <button type="button" class="chip-btn" aria-pressed="false">Performance Creative</button>
+          </div>
+        </div>
+
+        <!-- Field 5: Project Summary -->
+        <div class="form-group">
+          <label class="form-label" for="brief-summary">05. Project Summary & Goals *</label>
+          <textarea id="brief-summary" class="form-textarea" placeholder="Describe the campaign, product launch, audience tension, or creative challenge..." required></textarea>
+        </div>
+
+        <!-- Field 6 & 7: Budget & Timing -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+          <div class="form-group">
+            <label class="form-label" for="brief-budget">06. Budget Range</label>
+            <select id="brief-budget" class="form-input" style="background: #181818; color: var(--paper);">
+              <option value="">Select range...</option>
+              <option value="25-50k">$25k – $50k</option>
+              <option value="50-100k">$50k – $100k</option>
+              <option value="100-250k">$100k – $250k</option>
+              <option value="250k+">$250k+</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="brief-timing">07. Target Launch</label>
+            <select id="brief-timing" class="form-input" style="background: #181818; color: var(--paper);">
+              <option value="">Select timing...</option>
+              <option value="urgent">Immediate (< 4 weeks)</option>
+              <option value="quarter">Next Quarter</option>
+              <option value="future">Later this year</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="brief-status" class="form-status-msg" role="status"></div>
+
+        <button type="submit" class="btn btn-signal" style="margin-top: 8px;">
+          Transmit Brief ↗
+        </button>
+      </form>
+    </aside>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

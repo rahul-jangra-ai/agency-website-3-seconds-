@@ -1,0 +1,89 @@
+/* ==========================================================================
+   3SECONDS DESIGN SYSTEM — TOKENS
+   Editorial speed + internet culture + production craft
+   Reference: 3seconds-site-blueprint/01-foundation/design-system.md
+   ========================================================================== */
+
+:root {
+  /* Color Palette */
+  --ink: #0B0B0B;          /* Primary dark background / text */
+  --paper: #F2EFE7;        /* Warm off-white surface / text */
+  --signal: #FF4F19;       /* High-energy accent / CTA / focus */
+  --flash: #D8FF36;        /* Sparing secondary accent for tags & status */
+  --mid: #8E8E88;          /* Secondary text & subtle annotations */
+  
+  /* Derived Surfaces & Borders */
+  --ink-elevated: #151515;
+  --ink-card: #1A1A1A;
+  --ink-highlight: #242424;
+  --border-subtle: rgba(242, 239, 231, 0.12);
+  --border-strong: rgba(242, 239, 231, 0.28);
+  --border-signal: rgba(255, 79, 25, 0.5);
+
+  /* Typography Families */
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Space Mono', 'SF Mono', Consolas, monospace;
+
+  /* Typography Scales (Fluid Clamps) */
+  --font-hero: clamp(52px, 8.2vw, 140px);
+  --font-title: clamp(38px, 5.2vw, 88px);
+  --font-section: clamp(28px, 3.8vw, 56px);
+  --font-card-title: clamp(20px, 2.2vw, 32px);
+  --font-body-lg: clamp(18px, 1.3vw, 22px);
+  --font-body-base: clamp(15px, 1.05vw, 18px);
+  --font-label: clamp(11px, 0.85vw, 13px);
+  --font-timecode: clamp(11px, 0.8vw, 13px);
+
+  /* Line Heights */
+  --lh-tight: 0.92;
+  --lh-display: 0.98;
+  --lh-heading: 1.15;
+  --lh-body: 1.55;
+
+  /* Letter Spacing */
+  --tracking-tight: -0.04em;
+  --tracking-snug: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.08em;
+  --tracking-allcaps: 0.12em;
+
+  /* Spacing Scale */
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 20px;
+  --space-lg: 32px;
+  --space-xl: 48px;
+  --space-2xl: 72px;
+  --space-3xl: 112px;
+  --space-4xl: 160px;
+
+  /* Layout Constraints */
+  --container-max-width: 1600px;
+  --page-padding: clamp(20px, 4vw, 56px);
+  --gutter: clamp(16px, 2vw, 28px);
+
+  /* Border Radii (deliberately sharp / 2-6px, avoiding generic 24px SaaS cards) */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+
+  /* Motion & Easings (Reference: 01-foundation/motion-scroll-system.md) */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-linear: linear;
+
+  --dur-micro: 160ms;
+  --dur-component: 320ms;
+  --dur-section: 600ms;
+  --dur-transition: 450ms;
+
+  /* Z-Index Hierarchy */
+  --z-base: 1;
+  --z-sticky: 10;
+  --z-header: 100;
+  --z-floating: 200;
+  --z-overlay: 500;
+  --z-transition: 1000;
+}
